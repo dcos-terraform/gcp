@@ -213,6 +213,10 @@ module "dcos" {
 | Name | Description |
 |------|-------------|
 | masters-ips | Master IP addresses |
+| masters-self-links | Master self links |
 | masters-loadbalancer | This is the load balancer address to access the DC/OS UI |
 | public-agents-loadbalancer | This is the load balancer address to access the DC/OS public agents |
-
+| public-agents-self-links | Public Agent self links |
+| public-agents-ips | Public Agent IP addresses |
+| private-agents-self-links | Private Agent self links |
+| private-agents-ips | Private Agent IP addresses |
