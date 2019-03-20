@@ -37,3 +37,8 @@ output "private-agents-ips" {
   description = "Private agent IP addresses"
   value       = "${coalescelist(module.dcos-infrastructure.private_agents.public_ips, module.dcos-infrastructure.private_agents.private_ips)}"
 }
+
+output "network-self-link" {
+  description = "Private VPC network self link"
+  value       = "${module.dcos-infrastructure.network.self_link}"
+}
