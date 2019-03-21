@@ -90,6 +90,7 @@ module "dcos-infrastructure" {
 
   infra_dcos_instance_os    = "${var.dcos_instance_os}"
   infra_public_ssh_key_path = "${var.ssh_public_key_file}"
+  infra_public_ssh_key      = "${var.ssh_public_key}"
 
   bootstrap_image            = "${var.bootstrap_gcp_image}"
   bootstrap_machine_type     = "${var.bootstrap_machine_type}"
