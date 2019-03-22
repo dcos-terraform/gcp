@@ -71,7 +71,7 @@
  *```
  */
 
-provider "google" {}
+provider "google-beta" {}
 
 resource "random_id" "id" {
   byte_length = 2
@@ -126,7 +126,7 @@ module "dcos-infrastructure" {
   dcos_version = "${var.dcos_version}"
 
   providers = {
-    google = "google"
+    google-beta = "google-beta"
   }
 }
 
