@@ -84,7 +84,7 @@ locals {
 
 module "dcos-infrastructure" {
   source  = "dcos-terraform/infrastructure/gcp"
-  version = "~> 0.1.0"
+  version = "~> 0.1.2"
 
   cluster_name = "${local.cluster_name}"
 
